@@ -1,0 +1,766 @@
+#
+# This class.ptf file built by Component Editor
+# 2006.07.19.02:21:47
+#
+# DO NOT MODIFY THIS FILE
+# If you hand-modify this file you will likely
+# interfere with Component Editor's ability to
+# read and edit it. And then Component Editor
+# will overwrite your changes anyway. So, for
+# the very best results, just relax and
+# DO NOT MODIFY THIS FILE
+#
+CLASS audio_dac_fifo
+{
+   CB_GENERATOR 
+   {
+      HDL_FILES 
+      {
+         FILE 
+         {
+            use_in_simulation = "1";
+            use_in_synthesis = "1";
+            type = "verilog";
+            filepath = "hdl/AUDIO_DAC_FIFO.v";
+         }
+         FILE 
+         {
+            use_in_simulation = "1";
+            use_in_synthesis = "1";
+            type = "verilog";
+            filepath = "hdl/FIFO_16_256.v";
+         }
+      }
+      top_module_name = "AUDIO_DAC_FIFO.v:AUDIO_DAC_FIFO";
+      emit_system_h = "0";
+      LIBRARIES 
+      {
+      }
+   }
+   MODULE_DEFAULTS global_signals
+   {
+      class = "audio_dac_fifo";
+      class_version = "1.0";
+      SYSTEM_BUILDER_INFO 
+      {
+         Instantiate_In_System_Module = "1";
+         Has_Clock = "1";
+         Top_Level_Ports_Are_Enumerated = "1";
+      }
+      COMPONENT_BUILDER 
+      {
+         GLS_SETTINGS 
+         {
+         }
+      }
+      PORT_WIRING 
+      {
+         PORT iWR_CLK
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "clk";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+      }
+      WIZARD_SCRIPT_ARGUMENTS 
+      {
+         hdl_parameters 
+         {
+            ref_clk = "18432000";
+            sample_rate = "48000";
+            data_width = "16";
+            channel_num = "2";
+         }
+      }
+      SIMULATION 
+      {
+         DISPLAY 
+         {
+         }
+      }
+      SLAVE avalon_slave_0
+      {
+         SYSTEM_BUILDER_INFO 
+         {
+            Bus_Type = "avalon";
+            Address_Group = "1";
+            Has_Clock = "0";
+            Address_Width = "0";
+            Address_Alignment = "native";
+            Data_Width = "8";
+            Has_Base_Address = "1";
+            Has_IRQ = "0";
+            Setup_Time = "0cycles";
+            Hold_Time = "0cycles";
+            Read_Wait_States = "0cycles";
+            Write_Wait_States = "0cycles";
+            Read_Latency = "0";
+            Maximum_Pending_Read_Transactions = "0";
+            Active_CS_Through_Read_Latency = "0";
+            Is_Printable_Device = "0";
+            Is_Memory_Device = "0";
+            Is_Readable = "0";
+            Is_Writable = "1";
+            Minimum_Uninterrupted_Run_Length = "1";
+         }
+         COMPONENT_BUILDER 
+         {
+            AVS_SETTINGS 
+            {
+               Setup_Value = "0";
+               Read_Wait_Value = "0";
+               Write_Wait_Value = "0";
+               Hold_Value = "0";
+               Timing_Units = "cycles";
+               Read_Latency_Value = "0";
+               Minimum_Arbitration_Shares = "1";
+               Active_CS_Through_Read_Latency = "0";
+               Max_Pending_Read_Transactions_Value = "1";
+               Address_Alignment = "native";
+               Is_Printable_Device = "0";
+               Interleave_Bursts = "0";
+               interface_name = "Avalon Slave";
+               external_wait = "0";
+               Is_Memory_Device = "0";
+            }
+         }
+         PORT_WIRING 
+         {
+            PORT iDATA
+            {
+               width = "-1";
+               width_expression = "((DATA_WIDTH - 1)) - (0) + 1";
+               direction = "input";
+               type = "writedata";
+               is_shared = "0";
+               vhdl_record_name = "";
+               vhdl_record_type = "";
+            }
+            PORT iWR
+            {
+               width = "1";
+               width_expression = "";
+               direction = "input";
+               type = "write";
+               is_shared = "0";
+               vhdl_record_name = "";
+               vhdl_record_type = "";
+            }
+            PORT oDATA
+            {
+               width = "-1";
+               width_expression = "((DATA_WIDTH - 1)) - (0) + 1";
+               direction = "output";
+               type = "readdata";
+               is_shared = "0";
+               vhdl_record_name = "";
+               vhdl_record_type = "";
+            }
+            PORT oAUD_DATA
+            {
+               width = "1";
+               width_expression = "";
+               direction = "output";
+               type = "export";
+               is_shared = "0";
+               vhdl_record_name = "";
+               vhdl_record_type = "";
+            }
+            PORT oAUD_LRCK
+            {
+               width = "1";
+               width_expression = "";
+               direction = "output";
+               type = "export";
+               is_shared = "0";
+               vhdl_record_name = "";
+               vhdl_record_type = "";
+            }
+            PORT oAUD_BCK
+            {
+               width = "1";
+               width_expression = "";
+               direction = "output";
+               type = "export";
+               is_shared = "0";
+               vhdl_record_name = "";
+               vhdl_record_type = "";
+            }
+            PORT oAUD_XCK
+            {
+               width = "1";
+               width_expression = "";
+               direction = "output";
+               type = "export";
+               is_shared = "0";
+               vhdl_record_name = "";
+               vhdl_record_type = "";
+            }
+            PORT iCLK_18_4
+            {
+               width = "1";
+               width_expression = "";
+               direction = "input";
+               type = "export";
+               is_shared = "0";
+               vhdl_record_name = "";
+               vhdl_record_type = "";
+            }
+            PORT iRST_N
+            {
+               width = "1";
+               width_expression = "";
+               direction = "input";
+               type = "reset_n";
+               is_shared = "0";
+               vhdl_record_name = "";
+               vhdl_record_type = "";
+            }
+         }
+      }
+   }
+   USER_INTERFACE 
+   {
+      USER_LABELS 
+      {
+         name = "AUDIO_DAC_FIFO";
+         technology = "Terasic Technologies Inc";
+      }
+      WIZARD_UI the_wizard_ui
+      {
+         title = "AUDIO_DAC_FIFO - {{ $MOD }}";
+         CONTEXT 
+         {
+            H = "WIZARD_SCRIPT_ARGUMENTS/hdl_parameters";
+            M = "";
+            SBI_global_signals = "SYSTEM_BUILDER_INFO";
+            SBI_avalon_slave_0 = "SLAVE avalon_slave_0/SYSTEM_BUILDER_INFO";
+            # The following signals have parameterized widths:
+            PORT_iDATA = "SLAVE avalon_slave_0/PORT_WIRING/PORT iDATA";
+            PORT_oDATA = "SLAVE avalon_slave_0/PORT_WIRING/PORT oDATA";
+         }
+         PAGES main
+         {
+            PAGE 1
+            {
+               align = "left";
+               title = "<b>AUDIO_DAC_FIFO 1.0</b> Settings";
+               layout = "vertical";
+               TEXT 
+               {
+                  title = "Built on: 2006.07.19.02:21:47";
+               }
+               TEXT 
+               {
+                  title = "Class name: audio_dac_fifo";
+               }
+               TEXT 
+               {
+                  title = "Class version: 1.0";
+               }
+               TEXT 
+               {
+                  title = "Component name: AUDIO_DAC_FIFO";
+               }
+               TEXT 
+               {
+                  title = "Component Group: Terasic Technologies Inc";
+               }
+               GROUP parameters
+               {
+                  title = "Parameters";
+                  layout = "form";
+                  align = "left";
+                  EDIT e1
+                  {
+                     id = "REF_CLK";
+                     editable = "1";
+                     title = "REF_CLK:";
+                     columns = "40";
+                     tooltip = "default value: 18432000";
+                     DATA 
+                     {
+                        $H/ref_clk = "$";
+                     }
+                     q = "'";
+                     warning = "{{ if(!(regexp('ugly_'+$H/ref_clk,'ugly_[0-9]*'+$q+'[bB][01][_01]*')||regexp('ugly_'+$H/ref_clk,'ugly_[0-9]*'+$q+'[hH][0-9a-fA-F][_0-9a-fA-F]*')||regexp('ugly_'+$H/ref_clk,'ugly_[0-9]*'+$q+'[oO][0-7][_0-7]*')||regexp('ugly_'+$H/ref_clk,'ugly_0x[0-9a-fA-F]+')||regexp('ugly_'+$H/ref_clk,'ugly_-?[0-9]+')))'REF_CLK must be numeric constant, not '+$H/ref_clk; }}";
+                  }
+                  EDIT e2
+                  {
+                     id = "SAMPLE_RATE";
+                     editable = "1";
+                     title = "SAMPLE_RATE:";
+                     columns = "40";
+                     tooltip = "default value: 48000";
+                     DATA 
+                     {
+                        $H/sample_rate = "$";
+                     }
+                     q = "'";
+                     warning = "{{ if(!(regexp('ugly_'+$H/sample_rate,'ugly_[0-9]*'+$q+'[bB][01][_01]*')||regexp('ugly_'+$H/sample_rate,'ugly_[0-9]*'+$q+'[hH][0-9a-fA-F][_0-9a-fA-F]*')||regexp('ugly_'+$H/sample_rate,'ugly_[0-9]*'+$q+'[oO][0-7][_0-7]*')||regexp('ugly_'+$H/sample_rate,'ugly_0x[0-9a-fA-F]+')||regexp('ugly_'+$H/sample_rate,'ugly_-?[0-9]+')))'SAMPLE_RATE must be numeric constant, not '+$H/sample_rate; }}";
+                  }
+                  EDIT e3
+                  {
+                     id = "DATA_WIDTH";
+                     editable = "1";
+                     title = "DATA_WIDTH:";
+                     columns = "40";
+                     tooltip = "default value: 16";
+                     DATA 
+                     {
+                        $H/data_width = "$";
+                     }
+                     q = "'";
+                     warning = "{{ if(!(regexp('ugly_'+$H/data_width,'ugly_[0-9]*'+$q+'[bB][01][_01]*')||regexp('ugly_'+$H/data_width,'ugly_[0-9]*'+$q+'[hH][0-9a-fA-F][_0-9a-fA-F]*')||regexp('ugly_'+$H/data_width,'ugly_[0-9]*'+$q+'[oO][0-7][_0-7]*')||regexp('ugly_'+$H/data_width,'ugly_0x[0-9a-fA-F]+')||regexp('ugly_'+$H/data_width,'ugly_-?[0-9]+')))'DATA_WIDTH must be numeric constant, not '+$H/data_width; }}";
+                  }
+                  EDIT e4
+                  {
+                     id = "CHANNEL_NUM";
+                     editable = "1";
+                     title = "CHANNEL_NUM:";
+                     columns = "40";
+                     tooltip = "default value: 2";
+                     DATA 
+                     {
+                        $H/channel_num = "$";
+                     }
+                     q = "'";
+                     warning = "{{ if(!(regexp('ugly_'+$H/channel_num,'ugly_[0-9]*'+$q+'[bB][01][_01]*')||regexp('ugly_'+$H/channel_num,'ugly_[0-9]*'+$q+'[hH][0-9a-fA-F][_0-9a-fA-F]*')||regexp('ugly_'+$H/channel_num,'ugly_[0-9]*'+$q+'[oO][0-7][_0-7]*')||regexp('ugly_'+$H/channel_num,'ugly_0x[0-9a-fA-F]+')||regexp('ugly_'+$H/channel_num,'ugly_-?[0-9]+')))'CHANNEL_NUM must be numeric constant, not '+$H/channel_num; }}";
+                  }
+               }
+               GROUP variable_port_widths
+               {
+                  # This group is for display only, to preview parameterized port widths
+                  title = "Parameterized Signal Widths";
+                  layout = "form";
+                  align = "left";
+                  EDIT iDATA_width
+                  {
+                     id = "iDATA_width";
+                     editable = "0";
+                     title = "iDATA[((DATA_WIDTH - 1)) - (0) + 1]:";
+                     tooltip = "<b>iDATA[((DATA_WIDTH - 1)) - (0) + 1]</b><br> direction: input<br> signal type: writedata";
+                     # This expression should emulate the HDL, and assign the port width
+                     dummy = "{{ $PORT_iDATA/width = (int((( ( $H/data_width )  - 1)) - (0) + 1-1) - int(0) + 1); }}";
+                     dummy_dummy = "{{ $SBI_avalon_slave_0/Data_Width = 2 ^ int(log2($PORT_iDATA/width - 1) + 1); }}";
+                     DATA 
+                     {
+                        # The EDIT field is noneditable, so this just reads the current width.
+                        $PORT_iDATA/width = "$";
+                     }
+                     warning = "{{ if($PORT_iDATA/width <= 0)('width of iDATA must be greater than zero' ) }}";
+                  }
+                  EDIT oDATA_width
+                  {
+                     id = "oDATA_width";
+                     editable = "0";
+                     title = "oDATA[((DATA_WIDTH - 1)) - (0) + 1]:";
+                     tooltip = "<b>oDATA[((DATA_WIDTH - 1)) - (0) + 1]</b><br> direction: output<br> signal type: readdata";
+                     # This expression should emulate the HDL, and assign the port width
+                     dummy = "{{ $PORT_oDATA/width = (int((( ( $H/data_width )  - 1)) - (0) + 1-1) - int(0) + 1); }}";
+                     dummy_dummy = "{{ $SBI_avalon_slave_0/Data_Width = 2 ^ int(log2($PORT_oDATA/width - 1) + 1); }}";
+                     DATA 
+                     {
+                        # The EDIT field is noneditable, so this just reads the current width.
+                        $PORT_oDATA/width = "$";
+                     }
+                     warning = "{{ if($PORT_oDATA/width <= 0)('width of oDATA must be greater than zero' ) }}";
+                  }
+               }
+            }
+         }
+      }
+   }
+   SOPC_Builder_Version = "6.00";
+   COMPONENT_BUILDER 
+   {
+      HDL_PARAMETERS 
+      {
+         # generated by CBDocument.getParameterContainer
+         # used only by Component Editor
+         HDL_PARAMETER ref_clk
+         {
+            parameter_name = "REF_CLK";
+            type = "integer";
+            default_value = "18432000";
+            editable = "1";
+            tooltip = "";
+         }
+         HDL_PARAMETER sample_rate
+         {
+            parameter_name = "SAMPLE_RATE";
+            type = "integer";
+            default_value = "48000";
+            editable = "1";
+            tooltip = "";
+         }
+         HDL_PARAMETER data_width
+         {
+            parameter_name = "DATA_WIDTH";
+            type = "integer";
+            default_value = "16";
+            editable = "1";
+            tooltip = "";
+         }
+         HDL_PARAMETER channel_num
+         {
+            parameter_name = "CHANNEL_NUM";
+            type = "integer";
+            default_value = "2";
+            editable = "1";
+            tooltip = "";
+         }
+      }
+      SW_FILES 
+      {
+      }
+      built_on = "2006.07.19.02:21:47";
+      CACHED_HDL_INFO 
+      {
+         # cached hdl info, emitted by CBFrameRealtime.getDocumentCachedHDLInfoSection
+         # used only by Component Builder
+         FILE FIFO_16_256.v
+         {
+            file_mod = "Wed Jul 19 01:52:44 CST 2006";
+            quartus_map_start = "Wed Jul 19 02:13:24 CST 2006";
+            quartus_map_finished = "Wed Jul 19 02:13:27 CST 2006";
+            #found 1 valid modules
+            WRAPPER FIFO_16_256
+            {
+               CLASS FIFO_16_256
+               {
+                  CB_GENERATOR 
+                  {
+                     HDL_FILES 
+                     {
+                        FILE 
+                        {
+                           use_in_simulation = "1";
+                           use_in_synthesis = "1";
+                           type = "";
+                           filepath = "C:/DE2/DE2_NIOS_NET/Audio_DAC_FIFO/hdl/FIFO_16_256.v";
+                        }
+                     }
+                     top_module_name = "FIFO_16_256";
+                     emit_system_h = "0";
+                  }
+                  MODULE_DEFAULTS global_signals
+                  {
+                     class = "FIFO_16_256";
+                     class_version = "1.0";
+                     SYSTEM_BUILDER_INFO 
+                     {
+                        Instantiate_In_System_Module = "1";
+                     }
+                     SLAVE avalon_slave_0
+                     {
+                        SYSTEM_BUILDER_INFO 
+                        {
+                           Bus_Type = "avalon";
+                        }
+                        PORT_WIRING 
+                        {
+                           PORT aclr
+                           {
+                              width = "1";
+                              width_expression = "";
+                              direction = "input";
+                              type = "export";
+                              is_shared = "0";
+                              vhdl_record_name = "";
+                              vhdl_record_type = "";
+                           }
+                           PORT data
+                           {
+                              width = "16";
+                              width_expression = "";
+                              direction = "input";
+                              type = "export";
+                              is_shared = "0";
+                              vhdl_record_name = "";
+                              vhdl_record_type = "";
+                           }
+                           PORT rdclk
+                           {
+                              width = "1";
+                              width_expression = "";
+                              direction = "input";
+                              type = "export";
+                              is_shared = "0";
+                              vhdl_record_name = "";
+                              vhdl_record_type = "";
+                           }
+                           PORT rdreq
+                           {
+                              width = "1";
+                              width_expression = "";
+                              direction = "input";
+                              type = "export";
+                              is_shared = "0";
+                              vhdl_record_name = "";
+                              vhdl_record_type = "";
+                           }
+                           PORT wrclk
+                           {
+                              width = "1";
+                              width_expression = "";
+                              direction = "input";
+                              type = "export";
+                              is_shared = "0";
+                              vhdl_record_name = "";
+                              vhdl_record_type = "";
+                           }
+                           PORT wrreq
+                           {
+                              width = "1";
+                              width_expression = "";
+                              direction = "input";
+                              type = "export";
+                              is_shared = "0";
+                              vhdl_record_name = "";
+                              vhdl_record_type = "";
+                           }
+                           PORT q
+                           {
+                              width = "16";
+                              width_expression = "";
+                              direction = "output";
+                              type = "export";
+                              is_shared = "0";
+                              vhdl_record_name = "";
+                              vhdl_record_type = "";
+                           }
+                           PORT wrfull
+                           {
+                              width = "1";
+                              width_expression = "";
+                              direction = "output";
+                              type = "export";
+                              is_shared = "0";
+                              vhdl_record_name = "";
+                              vhdl_record_type = "";
+                           }
+                        }
+                     }
+                  }
+                  USER_INTERFACE 
+                  {
+                     USER_LABELS 
+                     {
+                        name = "FIFO_16_256";
+                        technology = "imported components";
+                     }
+                  }
+                  SOPC_Builder_Version = "0.0";
+               }
+            }
+         }
+         FILE AUDIO_DAC_FIFO.v
+         {
+            file_mod = "Wed Jul 19 02:19:40 CST 2006";
+            quartus_map_start = "Wed Jul 19 02:19:56 CST 2006";
+            quartus_map_finished = "Wed Jul 19 02:19:59 CST 2006";
+            #found 1 valid modules
+            WRAPPER AUDIO_DAC_FIFO
+            {
+               CLASS AUDIO_DAC_FIFO
+               {
+                  CB_GENERATOR 
+                  {
+                     HDL_FILES 
+                     {
+                        FILE 
+                        {
+                           use_in_simulation = "1";
+                           use_in_synthesis = "1";
+                           type = "";
+                           filepath = "C:/DE2/DE2_NIOS_NET/Audio_DAC_FIFO/hdl/AUDIO_DAC_FIFO.v";
+                        }
+                     }
+                     top_module_name = "AUDIO_DAC_FIFO";
+                     emit_system_h = "0";
+                  }
+                  MODULE_DEFAULTS global_signals
+                  {
+                     class = "AUDIO_DAC_FIFO";
+                     class_version = "1.0";
+                     SYSTEM_BUILDER_INFO 
+                     {
+                        Instantiate_In_System_Module = "1";
+                     }
+                     SLAVE avalon_slave_0
+                     {
+                        SYSTEM_BUILDER_INFO 
+                        {
+                           Bus_Type = "avalon";
+                        }
+                        PORT_WIRING 
+                        {
+                           PORT iDATA
+                           {
+                              width = "-1";
+                              width_expression = "((DATA_WIDTH - 1)) - (0) + 1";
+                              direction = "input";
+                              type = "export";
+                              is_shared = "0";
+                              vhdl_record_name = "";
+                              vhdl_record_type = "";
+                           }
+                           PORT iWR
+                           {
+                              width = "1";
+                              width_expression = "";
+                              direction = "input";
+                              type = "export";
+                              is_shared = "0";
+                              vhdl_record_name = "";
+                              vhdl_record_type = "";
+                           }
+                           PORT iWR_CLK
+                           {
+                              width = "1";
+                              width_expression = "";
+                              direction = "input";
+                              type = "clk";
+                              is_shared = "0";
+                              vhdl_record_name = "";
+                              vhdl_record_type = "";
+                           }
+                           PORT oDATA
+                           {
+                              width = "-1";
+                              width_expression = "((DATA_WIDTH - 1)) - (0) + 1";
+                              direction = "output";
+                              type = "export";
+                              is_shared = "0";
+                              vhdl_record_name = "";
+                              vhdl_record_type = "";
+                           }
+                           PORT oAUD_DATA
+                           {
+                              width = "1";
+                              width_expression = "";
+                              direction = "output";
+                              type = "export";
+                              is_shared = "0";
+                              vhdl_record_name = "";
+                              vhdl_record_type = "";
+                           }
+                           PORT oAUD_LRCK
+                           {
+                              width = "1";
+                              width_expression = "";
+                              direction = "output";
+                              type = "export";
+                              is_shared = "0";
+                              vhdl_record_name = "";
+                              vhdl_record_type = "";
+                           }
+                           PORT oAUD_BCK
+                           {
+                              width = "1";
+                              width_expression = "";
+                              direction = "output";
+                              type = "export";
+                              is_shared = "0";
+                              vhdl_record_name = "";
+                              vhdl_record_type = "";
+                           }
+                           PORT oAUD_XCK
+                           {
+                              width = "1";
+                              width_expression = "";
+                              direction = "output";
+                              type = "export";
+                              is_shared = "0";
+                              vhdl_record_name = "";
+                              vhdl_record_type = "";
+                           }
+                           PORT iCLK_18_4
+                           {
+                              width = "1";
+                              width_expression = "";
+                              direction = "input";
+                              type = "export";
+                              is_shared = "0";
+                              vhdl_record_name = "";
+                              vhdl_record_type = "";
+                           }
+                           PORT iRST_N
+                           {
+                              width = "1";
+                              width_expression = "";
+                              direction = "input";
+                              type = "export";
+                              is_shared = "0";
+                              vhdl_record_name = "";
+                              vhdl_record_type = "";
+                           }
+                        }
+                     }
+                  }
+                  USER_INTERFACE 
+                  {
+                     USER_LABELS 
+                     {
+                        name = "AUDIO_DAC_FIFO";
+                        technology = "imported components";
+                     }
+                  }
+                  SOPC_Builder_Version = "0.0";
+                  COMPONENT_BUILDER 
+                  {
+                     HDL_PARAMETERS 
+                     {
+                        # generated by CBDocument.getParameterContainer
+                        # used only by Component Editor
+                        HDL_PARAMETER ref_clk
+                        {
+                           parameter_name = "REF_CLK";
+                           type = "integer";
+                           default_value = "18432000";
+                           editable = "1";
+                           tooltip = "";
+                        }
+                        HDL_PARAMETER sample_rate
+                        {
+                           parameter_name = "SAMPLE_RATE";
+                           type = "integer";
+                           default_value = "48000";
+                           editable = "1";
+                           tooltip = "";
+                        }
+                        HDL_PARAMETER data_width
+                        {
+                           parameter_name = "DATA_WIDTH";
+                           type = "integer";
+                           default_value = "16";
+                           editable = "1";
+                           tooltip = "";
+                        }
+                        HDL_PARAMETER channel_num
+                        {
+                           parameter_name = "CHANNEL_NUM";
+                           type = "integer";
+                           default_value = "2";
+                           editable = "1";
+                           tooltip = "";
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+   ASSOCIATED_FILES 
+   {
+      Add_Program = "the_wizard_ui";
+      Edit_Program = "the_wizard_ui";
+      Generator_Program = "cb_generator.pl";
+   }
+}

@@ -1,0 +1,370 @@
+!SESSION 2007-06-13 15:45:19.562 -----------------------------------------------
+eclipse.buildId=M20060629-1905
+java.version=1.5.0_06
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_TW
+Command-line arguments:  -data D:\keith_temp\quartusII\DE2_System_v1.5\DE2_System_v1.5\DE2_demonstrations\DE2_NIOS_DEVICE_LED\HW -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 1 0 2007-06-13 15:45:21.640
+!MESSAGE Conversion of persistent properties completed successfully.
+
+!ENTRY org.eclipse.cdt.debug.core 4 1000 2007-06-13 15:45:27.812
+!MESSAGE Unable to restore source location: Unable to initialize source location - invalid directory path D:\altera\kits\nios2_60\bin\nios2-gnutools\src.
+
+!ENTRY org.eclipse.cdt.debug.core 4 1000 2007-06-13 15:45:29.718
+!MESSAGE Unable to restore source location: Unable to initialize source location - invalid directory path D:\altera\kits\nios2_60\bin\nios2-gnutools\src.
+!SESSION 2007-06-13 16:09:15.015 -----------------------------------------------
+eclipse.buildId=M20060629-1905
+java.version=1.5.0_06
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_TW
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.cdt.debug.core 4 1000 2007-06-13 16:09:24.000
+!MESSAGE Unable to restore source location: Unable to initialize source location - invalid directory path D:\altera\kits\nios2_60\bin\nios2-gnutools\src.
+
+!ENTRY org.eclipse.cdt.debug.core 4 1000 2007-06-13 16:09:24.468
+!MESSAGE Unable to restore source location: Unable to initialize source location - invalid directory path D:\altera\kits\nios2_60\bin\nios2-gnutools\src.
+!SESSION 2007-06-13 16:20:29.562 -----------------------------------------------
+eclipse.buildId=M20060629-1905
+java.version=1.5.0_06
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_TW
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.cdt.debug.core 4 1000 2007-06-13 16:20:37.406
+!MESSAGE Unable to restore source location: Unable to initialize source location - invalid directory path D:\altera\kits\nios2_60\bin\nios2-gnutools\src.
+
+!ENTRY org.eclipse.cdt.debug.core 4 1000 2007-06-13 16:20:39.203
+!MESSAGE Unable to restore source location: Unable to initialize source location - invalid directory path D:\altera\kits\nios2_60\bin\nios2-gnutools\src.
+
+!ENTRY org.eclipse.core.resources 4 4 2007-06-13 16:25:39.781
+!MESSAGE Exception occurred while saving project preferences: /hello_led_0_syslib/.settings/org.eclipse.cdt.core.prefs.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: A resource already exists on disk D:\keith_temp\quartusII\DE2_System_v1.5\DE2_System_v1.5\DE2_demonstrations\DE2_NIOS_DEVICE_LED\HW\hello_led_0_syslib\.settings\org.eclipse.cdt.core.prefs.
+	at org.eclipse.core.internal.resources.File.create(File.java:142)
+	at org.eclipse.core.internal.resources.ProjectPreferences$2.run(ProjectPreferences.java:570)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1737)
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:581)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.flush(EclipsePreferences.java:352)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:379)
+	at org.eclipse.cdt.internal.core.pdom.PDOMManager$SavePrefs.run(PDOMManager.java:227)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.core.resources 4 272 2007-06-13 16:25:39.781
+!MESSAGE A resource already exists on disk D:\keith_temp\quartusII\DE2_System_v1.5\DE2_System_v1.5\DE2_demonstrations\DE2_NIOS_DEVICE_LED\HW\hello_led_0_syslib\.settings\org.eclipse.cdt.core.prefs.
+
+!ENTRY com.altera.ide.core 1 0 2007-06-13 16:25:52.312
+!MESSAGE C:\altera\71\quartus\bin\cygwin\bin/cygpath --unix --file - 
+
+!ENTRY com.altera.nj.launch 1 0 2007-06-13 16:26:42.875
+!MESSAGE jtagconfig --listhardware 
+
+!ENTRY com.altera.nj.launch 1 0 2007-06-13 16:26:43.578
+!MESSAGE jtagconfig --cable USB-Blaster [USB-0] --extra-info 
+!SESSION 2007-06-13 16:38:21.703 -----------------------------------------------
+eclipse.buildId=M20060629-1905
+java.version=1.5.0_06
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_TW
+Command-line arguments:  -data D:\keith_temp\quartusII\DE2_System_v1.5\DE2_System_v1.5\DE2_demonstrations\DE2_NIOS_DEVICE_LED\HW -os win32 -ws win32 -arch x86
+
+!ENTRY com.altera.nj.launch 1 0 2007-06-13 16:39:33.640
+!MESSAGE jtagconfig --listhardware 
+
+!ENTRY com.altera.nj.launch 1 0 2007-06-13 16:39:34.312
+!MESSAGE jtagconfig --cable USB-Blaster [USB-0] --extra-info 
+!SESSION 2007-06-13 16:42:37.656 -----------------------------------------------
+eclipse.buildId=M20060629-1905
+java.version=1.5.0_06
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_TW
+Command-line arguments:  -data D:\keith_temp\quartusII\DE2_System_v1.5\DE2_System_v1.5\DE2_demonstrations\DE2_NIOS_DEVICE_LED\HW -os win32 -ws win32 -arch x86
+
+!ENTRY com.altera.nj.launch 1 0 2007-06-13 16:42:58.765
+!MESSAGE jtagconfig --listhardware 
+
+!ENTRY com.altera.nj.launch 1 0 2007-06-13 16:42:59.484
+!MESSAGE jtagconfig --cable USB-Blaster [USB-0] --extra-info 
+
+!ENTRY com.altera.ide.core 1 0 2007-06-13 16:43:11.546
+!MESSAGE C:\altera\71\quartus\bin\cygwin\bin/cygpath --unix --file - 
+!SESSION 2007-06-13 17:27:06.687 -----------------------------------------------
+eclipse.buildId=M20060629-1905
+java.version=1.5.0_06
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_TW
+Command-line arguments:  -data D:\keith_temp\quartusII\DE2_System_v1.5\DE2_System_v1.5\DE2_demonstrations\DE2_NIOS_DEVICE_LED\HW -os win32 -ws win32 -arch x86
+
+!ENTRY com.altera.nj.launch 1 0 2007-06-13 17:27:24.203
+!MESSAGE jtagconfig --listhardware 
+
+!ENTRY com.altera.nj.launch 1 0 2007-06-13 17:27:25.171
+!MESSAGE jtagconfig --cable USB-Blaster [USB-0] --extra-info 
+
+!ENTRY com.altera.ide.core 1 0 2007-06-13 17:27:30.187
+!MESSAGE C:\altera\71\quartus\bin\cygwin\bin/cygpath --unix --file - 
+
+!ENTRY org.eclipse.debug.core 4 2 2007-06-13 17:35:26.203
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.debug.core.Launch.getLaunchManager(Launch.java:504)
+	at org.eclipse.debug.core.Launch.fireTerminate(Launch.java:400)
+	at org.eclipse.debug.core.Launch.handleDebugEvents(Launch.java:571)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1076)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1108)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:344)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+!ENTRY org.eclipse.core.jobs 4 2 2007-06-13 17:35:26.218
+!MESSAGE An internal error occurred during: "Debug Event Dispatch".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.debug.core.DebugPlugin.log(DebugPlugin.java:860)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.handleException(DebugPlugin.java:1062)
+	at org.eclipse.core.runtime.SafeRunner.handleException(SafeRunner.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:39)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1108)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:344)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SESSION 2007-06-13 17:45:10.140 -----------------------------------------------
+eclipse.buildId=M20060629-1905
+java.version=1.5.0_06
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_TW
+Command-line arguments:  -data D:\keith_temp\quartusII\DE2_System_v1.5\DE2_System_v1.5\DE2_demonstrations\DE2_NIOS_DEVICE_LED\HW -os win32 -ws win32 -arch x86
+
+!ENTRY com.altera.nj.launch 1 0 2007-06-13 17:45:32.421
+!MESSAGE jtagconfig --listhardware 
+
+!ENTRY com.altera.nj.launch 1 0 2007-06-13 17:45:33.390
+!MESSAGE jtagconfig --cable USB-Blaster [USB-0] --extra-info 
+
+!ENTRY com.altera.ide.core 1 0 2007-06-13 17:45:40.218
+!MESSAGE C:\altera\71\quartus\bin\cygwin\bin/cygpath --unix --file - 
+
+!ENTRY org.eclipse.core.filesystem 4 272 2007-06-13 17:46:05.078
+!MESSAGE Could not move: D:\keith_temp\quartusII\DE2_System_v1.5\DE2_System_v1.5\DE2_demonstrations\DE2_NIOS_DEVICE_LED\HW\hello_led_0\Debug\nios2-download.pid.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: D:\keith_temp\quartusII\DE2_System_v1.5\DE2_System_v1.5\DE2_demonstrations\DE2_NIOS_DEVICE_LED\HW\hello_led_0\Debug\nios2-download.pid.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:60)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:327)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:215)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:140)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:93)
+	at org.eclipse.core.filesystem.provider.FileStore.move(FileStore.java:345)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.move(LocalFile.java:308)
+	at org.eclipse.core.internal.localstore.BlobStore.addBlob(BlobStore.java:55)
+	at org.eclipse.core.internal.localstore.HistoryStore2.addState(HistoryStore2.java:92)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.recursiveKeepHistory(DeleteVisitor.java:95)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.recursiveKeepHistory(DeleteVisitor.java:90)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.delete(DeleteVisitor.java:58)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.visit(DeleteVisitor.java:152)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:93)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:219)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:332)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:771)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1639)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:695)
+	at org.eclipse.core.internal.resources.Workspace.delete(Workspace.java:856)
+	at org.eclipse.core.internal.resources.Workspace.delete(Workspace.java:827)
+	at com.altera.ide.core.builder.AlteraGeneratedMakefileBuilder.clean(AlteraGeneratedMakefileBuilder.java:484)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:605)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:167)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:230)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:233)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:252)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:285)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:271)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:236)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:127)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+org.eclipse.core.runtime.CoreException[271]: java.io.FileNotFoundException: D:\keith_temp\quartusII\DE2_System_v1.5\DE2_System_v1.5\DE2_demonstrations\DE2_NIOS_DEVICE_LED\HW\hello_led_0\Debug\nios2-download.pid (系統找不到指定的檔案。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:318)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:215)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:140)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:93)
+	at org.eclipse.core.filesystem.provider.FileStore.move(FileStore.java:345)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.move(LocalFile.java:308)
+	at org.eclipse.core.internal.localstore.BlobStore.addBlob(BlobStore.java:55)
+	at org.eclipse.core.internal.localstore.HistoryStore2.addState(HistoryStore2.java:92)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.recursiveKeepHistory(DeleteVisitor.java:95)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.recursiveKeepHistory(DeleteVisitor.java:90)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.delete(DeleteVisitor.java:58)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.visit(DeleteVisitor.java:152)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:93)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:219)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:332)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:771)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1639)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:695)
+	at org.eclipse.core.internal.resources.Workspace.delete(Workspace.java:856)
+	at org.eclipse.core.internal.resources.Workspace.delete(Workspace.java:827)
+	at com.altera.ide.core.builder.AlteraGeneratedMakefileBuilder.clean(AlteraGeneratedMakefileBuilder.java:484)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:605)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:167)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:230)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:233)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:252)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:285)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:271)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:236)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:127)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2007-06-13 17:46:05.078
+!MESSAGE File not found: D:\keith_temp\quartusII\DE2_System_v1.5\DE2_System_v1.5\DE2_demonstrations\DE2_NIOS_DEVICE_LED\HW\hello_led_0\Debug\nios2-download.pid.
+!STACK 0
+java.io.FileNotFoundException: D:\keith_temp\quartusII\DE2_System_v1.5\DE2_System_v1.5\DE2_demonstrations\DE2_NIOS_DEVICE_LED\HW\hello_led_0\Debug\nios2-download.pid (系統找不到指定的檔案。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:318)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:215)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:140)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:93)
+	at org.eclipse.core.filesystem.provider.FileStore.move(FileStore.java:345)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.move(LocalFile.java:308)
+	at org.eclipse.core.internal.localstore.BlobStore.addBlob(BlobStore.java:55)
+	at org.eclipse.core.internal.localstore.HistoryStore2.addState(HistoryStore2.java:92)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.recursiveKeepHistory(DeleteVisitor.java:95)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.recursiveKeepHistory(DeleteVisitor.java:90)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.delete(DeleteVisitor.java:58)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.visit(DeleteVisitor.java:152)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:93)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:219)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:332)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:771)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1639)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:695)
+	at org.eclipse.core.internal.resources.Workspace.delete(Workspace.java:856)
+	at org.eclipse.core.internal.resources.Workspace.delete(Workspace.java:827)
+	at com.altera.ide.core.builder.AlteraGeneratedMakefileBuilder.clean(AlteraGeneratedMakefileBuilder.java:484)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:605)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:167)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:230)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:233)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:252)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:285)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:271)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:236)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:127)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SESSION 2007-06-13 18:18:29.109 -----------------------------------------------
+eclipse.buildId=M20060629-1905
+java.version=1.5.0_06
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_TW
+Command-line arguments:  -data D:\keith_temp\quartusII\DE2_System_v1.5\DE2_System_v1.5\DE2_demonstrations\DE2_NIOS_DEVICE_LED\HW -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.cdt.debug.core 4 1000 2007-06-13 18:20:18.000
+!MESSAGE Unable to restore source location: Unable to initialize source location - invalid directory path D:\altera\kits\nios2_60\bin\nios2-gnutools\src.
+!SESSION 2007-06-13 18:22:04.984 -----------------------------------------------
+eclipse.buildId=M20060629-1905
+java.version=1.5.0_06
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_TW
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.cdt.debug.core 4 1000 2007-06-13 18:22:22.437
+!MESSAGE Unable to restore source location: Unable to initialize source location - invalid directory path D:\altera\kits\nios2_60\bin\nios2-gnutools\src.
+
+!ENTRY com.altera.nj.launch 1 0 2007-06-13 18:22:35.093
+!MESSAGE jtagconfig --listhardware 
+
+!ENTRY com.altera.nj.launch 1 0 2007-06-13 18:22:35.937
+!MESSAGE jtagconfig --cable USB-Blaster [USB-0] --extra-info 
+
+!ENTRY com.altera.ide.core 1 0 2007-06-13 18:22:40.515
+!MESSAGE C:\altera\71\quartus\bin\cygwin\bin/cygpath --unix --file - 
+!SESSION 2007-06-13 18:57:13.546 -----------------------------------------------
+eclipse.buildId=M20060629-1905
+java.version=1.5.0_06
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_TW
+Command-line arguments:  -data D:\keith_temp\quartusII\DE2_System_v1.5\DE2_System_v1.5\DE2_demonstrations\DE2_NIOS_DEVICE_LED\HW -os win32 -ws win32 -arch x86
+
+!ENTRY com.altera.ide.core 1 0 2007-06-13 18:57:36.718
+!MESSAGE C:\altera\71\quartus\bin\cygwin\bin/cygpath --unix --file - 
+
+!ENTRY com.altera.nj.launch 1 0 2007-06-13 19:00:09.140
+!MESSAGE jtagconfig --listhardware 
+
+!ENTRY com.altera.nj.launch 1 0 2007-06-13 19:00:10.125
+!MESSAGE jtagconfig --cable USB-Blaster [USB-0] --extra-info 
+!SESSION 2007-06-14 10:40:25.515 -----------------------------------------------
+eclipse.buildId=M20060629-1905
+java.version=1.5.0_06
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_TW
+Command-line arguments:  -data D:\keith_temp\quartusII\DE2_System_v1.5\DE2_System_v1.5\DE2_demonstrations\DE2_NIOS_DEVICE_LED\HW -os win32 -ws win32 -arch x86
+
+!ENTRY com.altera.ide.core 1 0 2007-06-14 10:40:46.375
+!MESSAGE C:\altera\71\quartus\bin\cygwin\bin/cygpath --unix --file - 
+
+!ENTRY com.altera.nj.launch 1 0 2007-06-14 10:43:18.562
+!MESSAGE jtagconfig --listhardware 
+
+!ENTRY com.altera.nj.launch 1 0 2007-06-14 10:43:19.859
+!MESSAGE jtagconfig --cable USB-Blaster [USB-0] --extra-info 
+!SESSION 2007-06-14 12:06:36.500 -----------------------------------------------
+eclipse.buildId=M20060629-1905
+java.version=1.5.0_06
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_TW
+Command-line arguments:  -data D:\keith_temp\quartusII\DE2_System_v1.5\DE2_System_v1.5\DE2_demonstrations\DE2_NIOS_DEVICE_LED\HW -os win32 -ws win32 -arch x86
+
+!ENTRY com.altera.nj.launch 1 0 2007-06-14 12:07:03.718
+!MESSAGE jtagconfig --listhardware 
+
+!ENTRY com.altera.nj.launch 1 0 2007-06-14 12:07:04.421
+!MESSAGE jtagconfig --cable USB-Blaster [USB-0] --extra-info 
+
+!ENTRY com.altera.ide.core 1 0 2007-06-14 12:07:09.296
+!MESSAGE C:\altera\71\quartus\bin\cygwin\bin/cygpath --unix --file - 
+!SESSION 2007-06-14 14:12:00.859 -----------------------------------------------
+eclipse.buildId=M20060629-1905
+java.version=1.5.0_06
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_TW
+Command-line arguments:  -data D:\keith_temp\quartusII\DE2_System_v1.5\DE2_System_v1.5\DE2_demonstrations\DE2_NIOS_DEVICE_LED\HW -os win32 -ws win32 -arch x86
+
+!ENTRY com.altera.nj.launch 1 0 2007-06-14 14:12:17.734
+!MESSAGE jtagconfig --listhardware 
+
+!ENTRY com.altera.nj.launch 1 0 2007-06-14 14:12:18.546
+!MESSAGE jtagconfig --cable USB-Blaster [USB-0] --extra-info 
+
+!ENTRY com.altera.ide.core 1 0 2007-06-14 14:12:23.984
+!MESSAGE C:\altera\71\quartus\bin\cygwin\bin/cygpath --unix --file - 
+!SESSION 2007-06-20 16:21:20.227 -----------------------------------------------
+eclipse.buildId=M20060629-1905
+java.version=1.5.0_06
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_TW
+Command-line arguments:  -data D:\keith_temp\quartusII\DE2_System_v1.5\DE2_System_v1.5\DE2_demonstrations\DE2_NIOS_DEVICE_LED\HW -os win32 -ws win32 -arch x86
+
+!ENTRY com.altera.ide.core 1 0 2007-06-20 16:21:40.696
+!MESSAGE C:\altera\71\quartus\bin\cygwin\bin/cygpath --unix --file - 
+!SESSION 2007-11-21 20:57:40.609 -----------------------------------------------
+eclipse.buildId=M20060629-1905
+java.version=1.5.0_06
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_TW
+Command-line arguments:  -data C:\DE2\DE2_NIOS_DEVICE_LED\HW -os win32 -ws win32 -arch x86
+
+!ENTRY com.altera.nj.launch 1 0 2007-11-21 20:58:34.000
+!MESSAGE C:\altera\72\quartus\bin\quartus_pgmw.exe 

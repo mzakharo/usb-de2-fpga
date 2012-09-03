@@ -1,0 +1,116 @@
+Altera SOPC Builder Version 11.01 Build 208
+Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.
+
+
+No .sopc_builder configuration file(!)
+# 2012.07.08 14:13:49 (*) mk_custom_sdk starting
+# 2012.07.08 14:13:49 (*) Reading project D:/mzakharo/Documents/projects/bin/DE2_v2.0.1_SystemCD/DE2_demonstrations/DE2_NIOS_DEVICE_LED/HW/system_0.ptf.
+
+# 2012.07.08 14:13:50 (*) Finding all CPUs
+# 2012.07.08 14:13:50 (*) Finding all available components
+# 2012.07.08 14:13:50 (*) Reading D:/mzakharo/Documents/projects/bin/DE2_v2.0.1_SystemCD/DE2_demonstrations/DE2_NIOS_DEVICE_LED/HW/.sopc_builder/install.ptf
+
+# 2012.07.08 14:13:50 (*) Found 68 components
+
+# 2012.07.08 14:13:50 (*) Finding all peripherals
+
+# 2012.07.08 14:13:50 (*) Finding software components
+
+# 2012.07.08 14:13:51 (*) (Legacy SDK Generation Skipped)
+# 2012.07.08 14:13:51 (*) (All TCL Script Generation Skipped)
+# 2012.07.08 14:13:51 (*) (No Libraries Built)
+# 2012.07.08 14:13:51 (*) (Contents Generation Skipped)
+# 2012.07.08 14:13:51 (*) mk_custom_sdk finishing
+
+# 2012.07.08 14:13:51 (*) Starting generation for system: system_0.
+
+.
+.
+.
+.
+.
+.
+..
+.
+.......
+
+# 2012.07.08 14:13:52 (*) Running Generator Program for cpu_0
+
+# 2012.07.08 14:13:54 (*) Starting Nios II generation
+# 2012.07.08 14:13:54 (*)   Checking for plaintext license.
+# 2012.07.08 14:13:55 (*)   Plaintext license not found.
+# 2012.07.08 14:13:55 (*)   Checking for encrypted license (non-evaluation).
+# 2012.07.08 14:13:55 (*)   Encrypted license found.  SOF will not be time-limited.
+# 2012.07.08 14:13:55 (*)   Getting CPU configuration settings
+# 2012.07.08 14:13:55 (*)   Elaborating CPU configuration settings
+# 2012.07.08 14:13:55 (*)   Creating all objects for CPU
+
+# 2012.07.08 14:13:55 (*)     Testbench
+# 2012.07.08 14:13:55 (*)     Instruction decoding
+# 2012.07.08 14:13:55 (*)       Instruction fields
+# 2012.07.08 14:13:55 (*)       Instruction decodes
+# 2012.07.08 14:13:56 (*)       Signals for RTL simulation waveforms
+# 2012.07.08 14:13:56 (*)       Instruction controls
+# 2012.07.08 14:13:56 (*)     Pipeline frontend
+# 2012.07.08 14:13:56 (*)     Pipeline backend
+# 2012.07.08 14:13:59 (*)   Generating HDL from CPU objects
+# 2012.07.08 14:14:01 (*)   Creating encrypted HDL
+
+# 2012.07.08 14:14:02 (*) Done Nios II generation
+
+# 2012.07.08 14:14:03 (*) Running Generator Program for cfi_flash_0
+
+# 2012.07.08 14:14:03 (*) Running Generator Program for sdram_0
+
+# 2012.07.08 14:14:04 (*) Running Generator Program for epcs_controller
+
+# 2012.07.08 14:14:06 (*) Running Generator Program for jtag_uart_0
+
+# 2012.07.08 14:14:07 (*) Running Generator Program for uart_0
+
+# 2012.07.08 14:14:08 (*) Running Generator Program for timer_0
+
+# 2012.07.08 14:14:09 (*) Running Generator Program for timer_1
+
+# 2012.07.08 14:14:10 (*) Running Generator Program for lcd_16207_0
+
+# 2012.07.08 14:14:10 (*) Running Generator Program for led_red
+
+# 2012.07.08 14:14:11 (*) Running Generator Program for led_green
+
+# 2012.07.08 14:14:12 (*) Running Generator Program for button_pio
+
+# 2012.07.08 14:14:13 (*) Running Generator Program for switch_pio
+
+# 2012.07.08 14:14:14 (*) Running Generator Program for SD_DAT
+
+# 2012.07.08 14:14:15 (*) Running Generator Program for SD_CMD
+
+# 2012.07.08 14:14:16 (*) Running Generator Program for SD_CLK
+
+.
+
+
+# 2012.07.08 14:14:17 (*) Running Test Generator Program for sdram_0
+
+# 2012.07.08 14:14:17 (*) Making arbitration and system (top) modules.
+
+# 2012.07.08 14:14:25 (*) Generating Quartus symbol for top level: system_0
+
+# 2012.07.08 14:14:25 (*) Symbol D:/mzakharo/Documents/projects/bin/DE2_v2.0.1_SystemCD/DE2_demonstrations/DE2_NIOS_DEVICE_LED/HW/system_0.bsf already exists, no need to regenerate
+# 2012.07.08 14:14:25 (*) Creating command-line system-generation script: D:/mzakharo/Documents/projects/bin/DE2_v2.0.1_SystemCD/DE2_demonstrations/DE2_NIOS_DEVICE_LED/HW/system_0_generation_script
+
+# 2012.07.08 14:14:25 (*) Running setup for HDL simulator: modelsim
+
+
+# 2012.07.08 14:14:25 (*) Completed generation for system: system_0.
+# 2012.07.08 14:14:25 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:
+  SOPC Builder database : D:/mzakharo/Documents/projects/bin/DE2_v2.0.1_SystemCD/DE2_demonstrations/DE2_NIOS_DEVICE_LED/HW/system_0.ptf 
+  System HDL Model : D:/mzakharo/Documents/projects/bin/DE2_v2.0.1_SystemCD/DE2_demonstrations/DE2_NIOS_DEVICE_LED/HW/system_0.v 
+  System Generation Script : D:/mzakharo/Documents/projects/bin/DE2_v2.0.1_SystemCD/DE2_demonstrations/DE2_NIOS_DEVICE_LED/HW/system_0_generation_script 
+
+
+# 2012.07.08 14:14:25 (*) SUCCESS: SYSTEM GENERATION COMPLETED.
+
+
+Press 'Exit' to exit.

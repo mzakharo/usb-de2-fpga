@@ -1,0 +1,22 @@
+Directory structure:
+
+src/ - source files for usb interface
+	usb.vhd - top entity
+	drv.vhd - main usb driver
+	hal.vhd - timing diagram implementation of ISP1362
+	devreq.vhd - handles standard usb device requests for sending descriptors,
+				implements only the subset of USB 2.0 requirement, enough to get
+				things working
+				
+quartus/ - quartus project files
+	Makefile - makefile for Gnu make - builds and loads the design
+
+support/DE2_NIOS_DEVICE_LED/ -  implementation of whats in vhdl, but in C and on
+                                nios II processor - for reference
+support/driver/   - windows driver to be installed prior to using the user
+                    application
+support/winusb/  - windows Visual Studio C++ 2012 project, implementing basic
+                        loop-back upload/download
+
+
+

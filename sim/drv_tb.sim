@@ -1,0 +1,18 @@
+#set NumericStdNoWarnings 1
+
+
+add wave clk
+add wave reset
+add wave otg_i
+add wave otg_o
+add wave drv_i
+add wave drv_o	
+add wave -radix hex otg_data
+
+add wave sim:/isp1368drv_tb/drv/r
+add wave sim:/isp1368drv_tb/io/r
+
+add wave -radix hex dbg
+
+run 1000 ns
+#exit -force

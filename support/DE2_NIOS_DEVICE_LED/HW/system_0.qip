@@ -1,0 +1,54 @@
+# clk_50
+# cpu_0
+set_global_assignment -name SDC_FILE [file join $::quartus(qip_path) cpu_0.sdc]
+set_global_assignment -name SOURCE_FILE [file join $::quartus(qip_path) cpu_0.ocp]
+# tri_state_bridge_0
+# cfi_flash_0
+# sdram_0
+# epcs_controller
+# jtag_uart_0
+# uart_0
+# timer_0
+# timer_1
+# lcd_16207_0
+# led_red
+# led_green
+# button_pio
+# switch_pio
+# sram_0
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) ip/SRAM_16Bit_512K/SRAM_16Bit_512K_hw.tcl]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ip/SRAM_16Bit_512K/hdl/SRAM_16Bit_512K.v]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) sram_0.v]
+# DM9000A
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) ip/DM9000A/DM9000A_IF_hw.tcl]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ip/DM9000A/hdl/DM9000A_IF.v]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) DM9000A.v]
+# VGA_0
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) ip/Binary_VGA_Controller/VGA_NIOS_CTRL_hw.tcl]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ip/Binary_VGA_Controller/hdl/VGA_NIOS_CTRL.v]
+set_global_assignment -name SOURCE_FILE [file join $::quartus(qip_path) ip/Binary_VGA_Controller/hdl/Img_DATA.hex]
+set_global_assignment -name SOURCE_FILE [file join $::quartus(qip_path) ip/Binary_VGA_Controller/hdl/VGA_Param.h]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ip/Binary_VGA_Controller/hdl/Img_RAM.v]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ip/Binary_VGA_Controller/hdl/VGA_Controller.v]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ip/Binary_VGA_Controller/hdl/VGA_OSD_RAM.v]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) VGA_0.v]
+# Audio_0
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) ip/Audio_DAC_FIFO/AUDIO_DAC_FIFO_hw.tcl]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ip/Audio_DAC_FIFO/hdl/AUDIO_DAC_FIFO.v]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ip/Audio_DAC_FIFO/hdl/FIFO_16_256.v]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) Audio_0.v]
+# SD_DAT
+# SD_CMD
+# SD_CLK
+# ISP1362
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) ip/ISP1362/ISP1362_IF_hw.tcl]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ip/ISP1362/ISP1362_IF.v]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ISP1362.v]
+# SEG7_Display
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) ip/SEG7_LUT_8/SEG7_LUT_8_hw.tcl]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ip/SEG7_LUT_8/hdl/SEG7_LUT_8.v]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ip/SEG7_LUT_8/hdl/SEG7_LUT.v]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) SEG7_Display.v]
+# null
+set_global_assignment -name SOPC_BUILDER_SIGNATURE_ID F0DEF17783AC0000013867CBBB02 
+ 

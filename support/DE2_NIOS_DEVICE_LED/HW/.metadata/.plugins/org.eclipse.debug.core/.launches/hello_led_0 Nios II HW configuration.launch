@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launchConfiguration type="com.altera.nj.launch.HWLaunch">
+<stringAttribute key="com.altera.nj.launch.TERMINAL_TO_WHAT" value="stdout"/>
+<booleanAttribute key="com.altera.nj.launch.STOP_AT_ALTMAIN" value="false"/>
+<stringAttribute key="com.altera.nj.launch.HW_UART_LOCAL_DEVICE_NAME" value=""/>
+<booleanAttribute key="org.eclipse.cdt.debug.mi.core.verboseMode" value="false"/>
+<stringAttribute key="com.altera.nj.launch.REMOTE_PORT" value="2342"/>
+<booleanAttribute key="com.altera.nj.launch.LAUNCH_FS2" value="false"/>
+<booleanAttribute key="com.altera.nj.launch.USE_ALTERA_GENERATED_GDB_SCRIPT" value="true"/>
+<booleanAttribute key="org.eclipse.cdt.debug.mi.core.AUTO_SOLIB" value="true"/>
+<booleanAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN" value="true"/>
+<intAttribute key="com.altera.nj.launch.DEBUG_TARGET" value="1"/>
+<booleanAttribute key="com.altera.nj.launch.VALIDATE_HW_SYSID" value="true"/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_ID" value="com.altera.nj.debug.core.NJGDBDebugger"/>
+<stringAttribute key="com.altera.nj.launch.PTF_CPU" value="cpu_0"/>
+<intAttribute key="com.altera.nj.launch.TERMINAL_BY_WHAT" value="1"/>
+<stringAttribute key="com.altera.nj.launch.PTF_NAME" value="D:\keith_temp\quartusII\DE2_System_v1.5\DE2_System_v1.5\DE2_demonstrations\DE2_NIOS_DEVICE_LED\HW\system_0.ptf"/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="run"/>
+<booleanAttribute key="com.altera.nj.launch.RESET_TARGET" value="false"/>
+<intAttribute key="com.altera.nj.launch.DEVICE_INDEX" value="-1"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="hello_led_0"/>
+<stringAttribute key="com.altera.nj.launch.DOWNLOAD_ARGS" value="--instance=0"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Debug/hello_led_0.elf"/>
+<stringAttribute key="org.eclipse.cdt.debug.mi.core.DEBUG_NAME" value="nios2-elf-gdb"/>
+<stringAttribute key="com.altera.nj.launch.CABLE_NAME" value="automatic"/>
+<booleanAttribute key="com.altera.nj.launch.STOP_AT_ENTRY" value="false"/>
+<stringAttribute key="org.eclipse.cdt.debug.mi.core.GDB_INIT" value="D:\keith_temp\quartusII\DE2_System_v1.5\DE2_System_v1.5\DE2_demonstrations\DE2_NIOS_DEVICE_LED\HW\hello_led_0_syslib\Debug\system_description\generated.gdb"/>
+<stringAttribute key="com.altera.nj.launch.EXTRA_ARGS" value=""/>
+</launchConfiguration>
