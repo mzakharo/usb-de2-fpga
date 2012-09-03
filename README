@@ -4,9 +4,7 @@ src/ - source files for usb interface
 	usb.vhd - top entity
 	drv.vhd - main usb driver
 	hal.vhd - timing diagram implementation of ISP1362
-	devreq.vhd - handles standard usb device requests for sending descriptors,
-				implements only the subset of USB 2.0 requirement, enough to get
-				things working
+	devreq.vhd - handles standard usb device requests 
 				
 quartus/ - quartus project files
 	Makefile - makefile for Gnu make - builds and loads the design
