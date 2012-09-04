@@ -35,17 +35,18 @@
 
 <p>The interface is designed to replace legacy uart connections that are used for interfacing with PC, and utilize a more reliable, faster, and versatile USB 2.0 connection.</p>
 
-<p>Design achievements:</p>
+<p>Features:</p>
 
 <ul>
 <li>Maximum speed: FMAX of 420MHz -  limit due to minimum period restriction (max I/O toggle rate)</li>
 <li>Low area: 339 LUTs (much lower than Nios-II implementation)</li>
 <li>Extendibility: design is split in multiple files, to support adding more features if necessary.</li>
 <li>Simple I/O interface:  8 bit data and one bit Ready signals incoming /outgoing data.</li>
-</ul><p>Design future work</p>
+</ul><p>Future enhancements</p>
 
 <ul>
 <li>Transfer rate:  USB interface supports speed up to 1MBps - current design only transfers 1 byte per USB transaction, which translates to large protocol overhead and lower transfer rates.</li>
+<li>Hardware flow control:  ISP1362 has built in flow control features to detect overflow/underflow conditions. Currently these conditions must be avoided in host software application.</li>
 </ul>
       </section>
     </div>
