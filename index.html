@@ -39,12 +39,12 @@
 
 <ul>
 <li>FMAX of 420MHz -  limit due to minimum period restriction (max I/O toggle rate)</li>
-<li>Organization: design is split in multiple files, based on common functionality</li>
-<li>Simple and reliable: support for bulk transfers on 2 endpoints (IN/OUT).</li>
+<li>2 Bulk endpoints (IN/OUT)</li>
+<li>Tested to work under Windows 7. Compiles with Quartus 11 &amp; 12 tools.</li>
 </ul><p>Future enhancements</p>
 
 <ul>
-<li>Transfer rate:  USB interface supports speed up to 1MBps - current design only transfers 1 byte per USB transaction, which translates to large protocol overhead and lower transfer rates.</li>
+<li>Transfer rate:  ISP1362 supports speeds up to 1MBps - current design can only transfer 1-2 bytes per USB transaction, which translates to large USB protocol overhead and lower bandwidth.</li>
 <li>Hardware flow control:  ISP1362 has built in flow control features to detect overflow/underflow conditions. Currently these conditions must be avoided by the host software application.</li>
 </ul>
       </section>
