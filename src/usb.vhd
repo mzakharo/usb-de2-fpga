@@ -67,7 +67,7 @@ begin
 	reset <= reset_synch;
 end process;
 															   
---produces 25MHz clock enable for HAL 
+--produces 25MHz clock enable pulse for HAL 
 --assumes 50MHz clk, if this assumption changes,
 --this code needs to be modified
 p_slowclk_en: process
@@ -102,5 +102,8 @@ dvrq: devreq port map(clk, reset, drv_o.devreq, drv_i.devreq);
 
 --loopback (for testing)
  drv_i.io <= drv_o.io;
+ 
+ --debug and test LEDs
+ LEDR(drv_o.io.Sdata'high downto 0) <= drv_o.io.Sdata;
 
 end handler;

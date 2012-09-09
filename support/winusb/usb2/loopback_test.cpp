@@ -2,6 +2,7 @@
 
 #include <lusb0_usb.h>
 #include <stdio.h>
+#include <stdint.h>
 
 #include <Windows.h>
 #include <process.h>         // needed for _beginthread()
@@ -38,13 +39,13 @@ char usb_thread_done = 0;
 void  usb_thread( void *arg )
 {
 	int ret;
-	for (int i = 0; i < sizeof(tbuf) ; i++)
-		tbuf[i] = (i % 0x100) & 0xFF;
+	for (int i = 0; i < sizeof(tbuf); i++)
+		tbuf[i] = i;
 	
 	usb_dev_handle *dev = (usb_dev_handle *) arg;
-	ret = usb_bulk_write(dev, EP_OUT, tbuf, sizeof(tbuf), 5000);
+	ret = usb_bulk_write(dev, EP_OUT,  tbuf, sizeof(tbuf), 5000);
 	 if (ret < 0)
-        printf("error reading:\n%s\n", usb_strerror());
+        printf("error writing:\n%s\n", usb_strerror());
     else
 		printf("Success! :Wrote %d bytes\n", ret);
 
@@ -87,18 +88,21 @@ int _tmain(int argc, _TCHAR* argv[])
         printf("success: claim_interface #%d\n", MY_INTF);
 	
 	
-	_beginthread( usb_thread, 0, (void*)dev );
-	
-
 	char rbuf[BUF_SIZE];
+	memset(rbuf,0, sizeof(rbuf));
 
+	//start downloading the data
+	_beginthread( usb_thread, 0, (void*)dev );	
+
+
+	//wait for all the data to loopback to the device
     ret = usb_bulk_read(dev, EP_IN, rbuf, sizeof(rbuf), 10000);
     if (ret < 0)
     {
         printf("error reading:\n%s\n", usb_strerror());
     }
     else
-        printf("success: bulk read %d bytes, rbuf[0] = 0x%02X\n", ret, rbuf[0]);
+		printf("success: bulk read %d bytes, rbuf[BUF_SIZE - 1] = %#x\n", ret, rbuf[BUF_SIZE - 1] & 0xFF);
 
 
 

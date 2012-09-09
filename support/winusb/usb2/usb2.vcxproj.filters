@@ -29,7 +29,7 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="kirsch_old_protocol.cpp">
+    <ClCompile Include="loopback_test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
