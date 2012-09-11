@@ -4,11 +4,11 @@
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="USB DE2-FPGA VHDL  : Hardware interface for USB controller on DE2 FPGA Platform" />
+    <meta name="description" content="USB for DE2-FPGA in VHDL : Hardware interface for ISP1362 USB controller on Altera DE2 FPGA Development Board " />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>USB DE2-FPGA VHDL </title>
+    <title>USB for DE2-FPGA in VHDL</title>
   </head>
 
   <body>
@@ -18,8 +18,8 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/mzakharo/usb-de2-fpga">View on GitHub</a>
 
-          <h1 id="project_title">USB DE2-FPGA VHDL </h1>
-          <h2 id="project_tagline">Hardware interface for USB controller on DE2 FPGA Platform</h2>
+          <h1 id="project_title">USB for DE2-FPGA in VHDL</h1>
+          <h2 id="project_tagline">Hardware interface for ISP1362 USB controller on Altera DE2 FPGA Development Board </h2>
 
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/mzakharo/usb-de2-fpga/zipball/master">Download this project as a .zip file</a>
@@ -31,21 +31,23 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <p>Using only VHDL to develop a standalone (NIOS II free) interface to the ISP1362 USB device present on Altera DE2 Education board. </p>
+        <p>A standalone (NIOS II free) interface in VHDL to the ISP1362 USB device for Altera DE2 Development board. </p>
 
-<p>The interface is designed to replace legacy uart connections that are used for interfacing with PC, and utilize a more reliable, faster, and versatile USB 2.0 connection.</p>
+<p>The interface is designed to enable simple, fast, and reliable communication with DE2 board and replace UART interfaces and NIOS II based designs typically used for this task.</p>
 
 <p>Features:</p>
 
 <ul>
-<li>FMAX of 420MHz -  limit due to minimum period restriction (max I/O toggle rate)</li>
+<li>Fmax: 420MHz -  limit due to max I/O toggle rate.</li>
+<li>Area: 338 LEs.</li>
 <li>2 Bulk endpoints (IN/OUT)</li>
-<li>Tested to work under Windows 7. Compiles with Quartus 11 &amp; 12 tools.</li>
-</ul><p>Future enhancements</p>
+<li>Test host software application for Windows using <a href="http://sourceforge.net/apps/trac/libusb-win32/wiki">libusb-win32</a>
+</li>
+</ul><p>Limitations:</p>
 
 <ul>
-<li>Transfer rate:  ISP1362 supports speeds up to 1MBps - current design can only transfer 1-2 bytes per USB transaction, which translates to large USB protocol overhead and lower bandwidth.</li>
-<li>Hardware flow control:  ISP1362 has built in flow control features to detect overflow/underflow conditions. Currently these conditions must be avoided by the host software application.</li>
+<li>Transfer rate:  ISP1362 supports speeds up to 1MBps - current design is limited to a maximum of 2 bytes per USB transaction, which translates to large USB protocol overhead and lower overall bandwidth.</li>
+<li>Hardware flow control:  ISP1362 has support for flow control features to detect overflow/underflow conditions. Currently these conditions must be avoided by the host software application.</li>
 </ul>
       </section>
     </div>
@@ -53,7 +55,7 @@
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">USB DE2-FPGA VHDL  maintained by <a href="https://github.com/mzakharo">mzakharo</a></p>
+        <p class="copyright">USB for DE2-FPGA in VHDL maintained by <a href="https://github.com/mzakharo">mzakharo</a></p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
