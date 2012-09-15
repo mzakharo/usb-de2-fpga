@@ -39,15 +39,15 @@
 
 <ul>
 <li>Fmax: 420MHz -  limit due to max I/O toggle rate.</li>
-<li>Area: 338 LEs.</li>
+<li>Area: 352 LEs.</li>
 <li>2 Bulk endpoints (IN/OUT)</li>
 <li>Test host software application for Windows using <a href="http://sourceforge.net/apps/trac/libusb-win32/wiki">libusb-win32</a>
 </li>
 </ul><p>Limitations:</p>
 
 <ul>
-<li>Transfer rate:  ISP1362 supports speeds up to 1MBps - current design is limited to a maximum of 2 bytes per USB transaction, which translates to large USB protocol overhead and lower overall bandwidth.</li>
-<li>Hardware flow control:  ISP1362 has support for flow control features to detect overflow/underflow conditions. Currently these conditions must be avoided by the host software application.</li>
+<li>Transfer rate: 180 KB/s with 2 Bytes/USB Transaction.  ISP1362 supports up to 1MB/s with 64 Bytes/USB Transaction.</li>
+<li>Hardware flow control:  ISP1362 can detect overflow of internal buffers. Currently overflows must be avoided by the host software application.</li>
 </ul>
       </section>
     </div>
