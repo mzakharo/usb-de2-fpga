@@ -35,7 +35,7 @@ usb_dev_handle *open_dev(void);
 #define BUF_SIZE (256*256)
 
 char tbuf[BUF_SIZE];
-char usb_thread_done = 0;
+volatile char usb_thread_done = 0;
 void  usb_thread( void *arg )
 {
 	int ret;
@@ -43,7 +43,7 @@ void  usb_thread( void *arg )
 		tbuf[i] = i;
 	
 	usb_dev_handle *dev = (usb_dev_handle *) arg;
-	ret = usb_bulk_write(dev, EP_OUT,  tbuf, sizeof(tbuf), 5000);
+	ret = usb_bulk_write(dev, EP_OUT,  tbuf, sizeof(tbuf), 10000);
 	 if (ret < 0)
         printf("error writing:\n%s\n", usb_strerror());
     else
@@ -91,18 +91,25 @@ int _tmain(int argc, _TCHAR* argv[])
 	char rbuf[BUF_SIZE];
 	memset(rbuf,0, sizeof(rbuf));
 
+
+// At some point, get the Tick Count
+	DWORD tickAtStart = GetTickCount();
+
 	//start downloading the data
 	_beginthread( usb_thread, 0, (void*)dev );	
 
 
 	//wait for all the data to loopback to the device
     ret = usb_bulk_read(dev, EP_IN, rbuf, sizeof(rbuf), 10000);
+	
+	// At some other point get the change of Tick Count
+	double elapsedTicks = (double)( GetTickCount() - tickAtStart);
     if (ret < 0)
     {
         printf("error reading:\n%s\n", usb_strerror());
     }
     else
-		printf("success: bulk read %d bytes, rbuf[BUF_SIZE - 1] = %#x\n", ret, rbuf[BUF_SIZE - 1] & 0xFF);
+		printf("success: bulk read %d bytes, TX+RX Bandwidth = %.2f KB/s\n", ret, ret * 2 / 1024/ (elapsedTicks / 1000.0));
 
 
 
@@ -110,7 +117,10 @@ int _tmain(int argc, _TCHAR* argv[])
 	{
 		//printf("0x%02X\n",rbuf[0] & 0xFF);
 		if ((rbuf[i] & 0xFF) != (tbuf[i] & 0xFF))
+		{
 			printf("Error data corrupt!%d\n",i);
+			break;
+		}
 	}
 	
 

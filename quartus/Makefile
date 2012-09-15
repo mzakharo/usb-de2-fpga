@@ -21,5 +21,5 @@ time : usb.sta.rpt
 	cat $<
 
 clean:
-	rm -rf db incremental_db *.rpt *.smsg *.summary *.sof *.pof *.pin *.done *.qdf *.qws
+	rm -rf db incremental_db *.rpt *.smsg *.summary *.sof *.pof *.pin *.done *.qdf *.qws serv_req_info.txt
 

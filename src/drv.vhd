@@ -19,7 +19,7 @@ use work.devreq_inc.all;
 package isp_drv is 
 
 type io_t is record
-	SData : std_logic_vector(7 downto 0);
+	SData : std_logic_vector(15 downto 0);
 	RDy : std_logic;
 end record;
 
@@ -89,7 +89,7 @@ type not_reset_t is record
 	DcInterrupt : data_t;
 	DeviceReq	: device_request_t;
 	req_rdy : bit;
-	Din : std_logic_vector(7 downto 0);
+	Din : std_logic_vector(io_t.SData'high downto 0);
 end record;
 
 type state_t is record
@@ -268,8 +268,8 @@ begin
 		when ep1_out5 => hal_out_cmd_irq(v,ClearBuffer & EPINDEX4EP01, 	wait_irq);
 		--ENDPOINT 2 Handler (no handshake) (TX)
 		when TxLoads => hal_out_cmd_irq (v, Wr_Buffer & EPINDEX4EP02, TxLoads1);
-		when TxLoads1 => hal_out_irq(v, x"0001", TxLoads2); -- Tx 1 Byte
-		when TxLoads2 => hal_out_irq(v, x"00" & r.nr.Din, TxLoadDone);
+		when TxLoads1 => hal_out_irq(v, x"0002", TxLoads2); -- Tx 2 Bytes
+		when TxLoads2 => hal_out_irq(v, r.nr.Din, TxLoadDone);
 		when txLoadDone => hal_out_cmd_irq(v,Validate & EPINDEX4EP02, wait_irq);
 		--CONTROL Packet Handler
 		when ctrl =>  hal_out_cmd_irq(v,Rd_Buffer & EPINDEX4EP0_CONTROL_OUT, 	ctrl1);
@@ -293,7 +293,7 @@ begin
 	end case;	
 	--outputs
 	q.io.RDy <= r.RxRdy;
-	q.io.SData <=  d.hal.data(7 downto 0);
+	q.io.SData <=  d.hal.data;
 	
 		
 	q.devreq.req <= r.nr.DeviceReq;

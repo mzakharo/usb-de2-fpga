@@ -135,14 +135,14 @@ constant CRD_endp1Desc	: endpointDescriptor:=(	bLength			=>x"07",
 												bDescriptorType	=>x"0" & desc_ENDPOINT,
 												bEndpointAddress=>x"01",
 												bmAttributes	=>x"02", --USB_ENDPOINT_TYPE_BULK
-												wMaxPacketSize	=>x"0001",
+												wMaxPacketSize	=>x"0002",
 												bInterval		=>x"00");
 												
 constant CRD_endp2Desc	: endpointDescriptor:=(	bLength			=>x"07",
 												bDescriptorType	=>x"0" & desc_ENDPOINT,
 												bEndpointAddress=>x"82",
 												bmAttributes	=>x"02", -- USB_ENDPOINT_TYPE_BULK
-												wMaxPacketSize	=>x"0001",
+												wMaxPacketSize	=>x"0002",
 												bInterval		=>x"00");
 
 --=-=-=-=-=-end USB Config-=-=-=-=-=--

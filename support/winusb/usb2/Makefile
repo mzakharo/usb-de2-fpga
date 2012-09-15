@@ -1,2 +1,2 @@
 clean:
-	rm -rf ipch *.opensdf *.sdf *.suo Debug
+	rm -rf ipch *.opensdf *.sdf *.suo Debug Release
