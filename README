@@ -9,7 +9,7 @@ Hardware interface for ISP1362 USB controller on Altera DE2 FPGA Development Boa
 
 1. -=-=-=HARDWARE-=-=-=
 
-The code is currently setup in loopback mode - meaning any bytes downloaded to DE-2 will be echoed back, 
+The code is currently setup in loopback mode - meaning any bytes downloaded to the board will be echoed back, 
 with the following line inside usb.vhd:
 
     drv_i.io <= drv_o.io;  --drv_x.io is of record type, with RDy and SData fields. 
