@@ -1,13 +1,24 @@
---=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
---=	ISP1362 Altera DE2 Interface 			
---=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+-- devreq.vhd
+-- -----------------------------------------------------------------------
+--   USB 2.0 Device Request handler
+-- -----------------------------------------------------------------------
+--  Version  : 1.0
+--  Date     : Sept 2012
+--  Author   : Mikhail Zakharov
+--  Web      : http://ca.linkedin.com/in/mzakharo
+--  Contact  : m.zakharo@gmail.com
+-- -----------------------------------------------------------------------
+--  FUNCTION :
+--     1. Handles control endpoint requests sent by the USB Host
+--	   2. Sends USB Descriptors, defined in usb_inc.vhd to the host
+--	   4. Can be used to implement Vendor Specific Device Requests
+-- -----------------------------------------------------------------------
+
 library ieee;
 use ieee.std_logic_1164.all;
 use work.usb_inc.all;
 use work.isp_hal.all;
 package devreq_inc is -- component declaration package
-
-
 
 type devreq_in_t is record
 	hal : drv_iface_out_t;

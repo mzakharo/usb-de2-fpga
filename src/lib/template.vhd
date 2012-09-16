@@ -1,3 +1,17 @@
+-- ENTITY_NAME.vhd
+-- -----------------------------------------------------------------------
+--   brief description
+-- -----------------------------------------------------------------------
+--  Version  : 0.0
+--  Date     : Jan 1999
+--  Author   : First Last
+--  Web      : http://website.com
+--  Contact  : username@website.com
+-- -----------------------------------------------------------------------
+--  FUNCTION :
+--     1. point 1
+--     2. point 2
+-- -----------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
 package ENTITY_NAME_inc is -- component declaration package

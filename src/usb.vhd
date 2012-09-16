@@ -1,12 +1,39 @@
---=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
---= Top USB	
---=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+-- usb.vhd
+-- -----------------------------------------------------------------------
+--   ISP1362 Inteface for DE2 - VHDL Model
+-- -----------------------------------------------------------------------
+--  Version  : 1.0
+--  Date     : Sept 2012
+--  Author   : Mikhail Zakharov
+--  Web      : http://ca.linkedin.com/in/mzakharo
+--  Contact  : m.zakharo@gmail.com
+-- -----------------------------------------------------------------------
+--  FUNCTION :
+--    A standalone (NIOS II free) interface in VHDL to the ISP1362 USB device
+--     for Altera DE2 Development board.
+--
+--   Typical Area :  
+--     ~ 352  LEs (Cyclone II)
+--   VHDL synthesis tool tested
+--   	QuartusII 11 & 12
+--
+--   Design notes :
+--
+--   1. 2 Bulk endpoints (IN/OUT)
+--
+--   2. Transfer rate: 180 KB/s with 2 Bytes/USB Transaction.
+--		ISP1362 supports up to 1MB/s with 64 Bytes/USB Transaction
+--
+--   3. Hardware flow control: ISP1362 can detect overflow of internal buffers. 
+--		Currently overflows must be avoided by the host software application.
+-- -----------------------------------------------------------------------
 
 library ieee;
 use ieee.std_logic_1164.all;
 use work.isp_hal.all;
 use work.isp_drv.all;
 use work.devreq_inc.all;
+
 
 entity usb is
 port(

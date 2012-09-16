@@ -1,6 +1,13 @@
-Directory structure:
+-=-=-=Project-=-=-=
+Hardware interface for ISP1362 USB controller on Altera DE2 FPGA Development Board 
 
--=-=-=HARDWARE-=-=-=
+-=-=-=Table of Contents-=-=-=
+
+	1. Hardware
+	2. Software
+	3. Misc
+
+1. -=-=-=HARDWARE-=-=-=
 
 The code is currently setup in loopback mode - meaning any bytes downloaded to DE-2 will be echoed back, 
 with the following line inside usb.vhd:
@@ -8,14 +15,14 @@ with the following line inside usb.vhd:
     drv_i.io <= drv_o.io;  --drv_x.io is of record type, with RDy and SData fields. 
     --when SData is ready, RDy will pulse for one clock cycle.
 
-
-Structure:
+Directory structure:
 
 src/ - source files for usb interface
 	usb.vhd - top entity
-	drv.vhd - main usb driver
+	drv.vhd - usb driver
 	hal.vhd - low level interface with ISP1362
-	devreq.vhd - handles standard usb device requests 
+	devreq.vhd - handles usb device requests 
+	isp_inc.vhd - ISP1362 register constants and bitfields
     usb_inc.vhd - usb descriptors and configuration.
         For description of the fields: http://www.beyondlogic.org/usbnutshell/usb1.shtml
 				
@@ -23,7 +30,9 @@ quartus/ - quartus project files. Quartus 11 and 12 were tested with this projec
     usb.qpf - Quartus project file 
 	Makefile - makefile for Gnu make - builds and loads the design
 
--=-=-=SOFTWARE-=-=-=
+sim/ - ModelSim and Active HDL testbenches and simulation files
+
+2. -=-=-=SOFTWARE-=-=-=
 
 The software has been tested under Windows 7 SP1 x64.
 
@@ -48,9 +57,11 @@ support/winusb/  - User application based on libusb-win32 API implementing basic
                             LEDs
 
 
--=-=-=MISC-=-=-=
+3. -=-=-=MISC-=-=-=
 
 support/DE2_NIOS_DEVICE_LED/ -  implementation of whats in vhdl, but in C and on
                                 nios II processor - for reference
+								
+support/datasheets/ - Datasheets and programming guides for ISP1362
 
 

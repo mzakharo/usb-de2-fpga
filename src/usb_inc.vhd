@@ -1,3 +1,16 @@
+-- usb_inc.vhd
+-- -----------------------------------------------------------------------
+--   USB 2.0 Descriptors, constants, and data structures
+-- -----------------------------------------------------------------------
+--  Version  : 1.0
+--  Date     : Sept 2012
+--  Author   : Mikhail Zakharov
+--  Web      : http://ca.linkedin.com/in/mzakharo
+--  Contact  : m.zakharo@gmail.com
+-- -----------------------------------------------------------------------
+--  FUNCTION :
+--     USB Endpoint Descriptor configuration 
+-- -----------------------------------------------------------------------
 
 library ieee;
 use ieee.std_logic_1164.all;

@@ -1,6 +1,18 @@
---=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
---=	ISP1362 Altera DE2 Interface 			
---=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+-- hal.vhd
+-- -----------------------------------------------------------------------
+--   ISP1362 low-level interface 
+-- -----------------------------------------------------------------------
+--  Version  : 1.0
+--  Date     : Sept 2012
+--  Author   : Mikhail Zakharov
+--  Web      : http://ca.linkedin.com/in/mzakharo
+--  Contact  : m.zakharo@gmail.com
+-- -----------------------------------------------------------------------
+--  FUNCTION :
+--     1. Implements ISP1362 I/O Timing 
+--     2. More info: ISP1362 Datasheet, Chapter 19, Sec 1.2
+-- -----------------------------------------------------------------------
+
 library ieee;
 use ieee.std_logic_1164.all;
 package isp_hal is -- component declaration package

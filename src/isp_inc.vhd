@@ -1,10 +1,20 @@
+-- isp_inc.vhd
+-- -----------------------------------------------------------------------
+--   ISP1362 register definitions and bit field constants
+-- -----------------------------------------------------------------------
+--  Version  : 1.0
+--  Date     : Sept 2012
+--  Author   : Mikhail Zakharov
+--  Web      : http://ca.linkedin.com/in/mzakharo
+--  Contact  : m.zakharo@gmail.com
+-- -----------------------------------------------------------------------
+--  FUNCTION :
+--     VHDL translation of constants, defined in ISP1362 Datasheet, Ch 15
+-- -----------------------------------------------------------------------
+
 library ieee;
 use ieee.std_logic_1164.all;
 package isp_inc is 
-
-
-
-
 
 --=-=-=-=-=-COMMANDS-=-=-=-=-=--
 constant Wr_DcEndpointConfiguration	: std_logic_vector(15 downto 4)	:= x"002";		--20h = control out
