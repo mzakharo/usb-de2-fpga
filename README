@@ -1,5 +1,6 @@
 -=-=-=Project-=-=-=
-Hardware interface for ISP1362 USB controller on Altera DE2 FPGA Development Board 
+Title: ISP1362 VHDL interface for DE2
+Description: A standalone (NIOS II free) interface in VHDL to the ISP1362 USB device for Altera DE2 Development board. 
 
 -=-=-=Table of Contents-=-=-=
 
