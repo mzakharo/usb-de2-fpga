@@ -1,1 +1,14 @@
-For instructions,  Google "insall driver manually windows 7".
+For instructions,  Google "insall driver manually windows".
+
+Instructions for Windows 7
+
+1.  Go to Control Panel.
+2.  Device Manager
+3.  Find the device that you are trying to install a driver for.
+4.  Right Click
+5.  Update Driver Software
+6.  Browse my computer for driver software
+7.  Let me pick from a list of device drivers on my computer
+8.  Have Disk
+9.  Browse for the .inf driver file. Open and Next.
+10. The driver will be installed.
