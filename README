@@ -13,8 +13,8 @@ Description: A standalone (NIOS II free) interface in VHDL to the ISP1362 USB de
 Design is written using techniques from Gaisler Method (www.gaisler.com/doc/vhdl2proc.pdf) for writing VHDL
 
 
-Hardware I/O interface:
-	For demo purposes, the design is placed in loopback mode - any bytes downloaded to the board will be echoed back, 
+I/O Interface:
+	For demonstration, the I/O interface is placed in loopback mode - incoming data from Host is echoed back, 
 	with the following line inside usb.vhd:
 	
 	    drv_i.io <= drv_o.io;  --drv_x.io is of record type, with RDy and SData fields. 
