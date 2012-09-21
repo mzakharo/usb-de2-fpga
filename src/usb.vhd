@@ -114,6 +114,7 @@ end process;
 --produces 25MHz clock enable pulse for HAL 
 --assumes 50MHz clk, if this assumption changes,
 --this code needs to be modified
+p_pulse25MHz: process
 
 -- Example 1:  design clk is @ 50MHz
 --                   _   _   _   _   _   _   _   _  
@@ -127,7 +128,6 @@ end process;
 --                   _ _             _ _    
 --pulse @ 25MHz     |   |_ _ _ _ _ _|   |_ _ _ _ _ _
 
-p_slowclk_en: process
 begin
 	wait until rising_edge(clk);
 	slowclk_en <= not(slowclk_en);
