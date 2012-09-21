@@ -1,6 +1,6 @@
 -- usb.vhd
 -- -----------------------------------------------------------------------
---  Copyright © 2012 Mikhail Zakharov 
+--  Copyright ï¿½ 2012 Mikhail Zakharov 
 -- -----------------------------------------------------------------------
 --
 -- This file is part of "ISP1362 VHDL interface for DE2"
@@ -144,10 +144,10 @@ d: drv port map(clk,reset, drv_i , drv_o);
 --device request handler
 dvrq: devreq port map(clk, reset, drv_o.devreq, drv_i.devreq);
 
---loopback (for testing)
- drv_i.io <= drv_o.io;
+--loopback (for demo)
+ drv_i.io <= drv_o.io; --when io.SData is ready, io.RDy will pulse for one clock cycle.
  
- --debug and test LEDs
+ --demo LEDs
  LEDR(drv_o.io.Sdata'high downto 0) <= drv_o.io.Sdata;
 
 end handler;
