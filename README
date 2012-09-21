@@ -17,8 +17,8 @@ I/O Interface:
 	For demonstration, the I/O interface is placed in loopback mode - incoming data from Host is echoed back, 
 	with the following line inside usb.vhd:
 	
-	    drv_i.io <= drv_o.io;  --drv_x.io is of record type, with RDy and SData fields. 
-	    --when SData is ready, RDy will pulse for one clock cycle.
+	    drv_i.io <= drv_o.io;  --drv_x.io is of record type, with .RDy and .SData fields
+	    --when io.SData is ready, io.RDy will pulse for one clock cycle.
 
 Directory structure:
 
