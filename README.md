@@ -30,9 +30,9 @@ Design is written using techniques from Gaisler Method  for writing VHDL
 	    drv_i.io <= drv_o.io;  --drv_x.io is of record type, with .RDy and .SData fields
 	    --when io.SData is ready, io.RDy will pulse for one clock cycle.
 
- * Directory structure:
+Directory structure:
 
-src/ - source files for usb interface
+ * src/ - source files for usb interface
 	usb.vhd - top entity
 	drv.vhd - usb driver
 	hal.vhd - low level interface with ISP1362
@@ -41,10 +41,10 @@ src/ - source files for usb interface
     	usb_inc.vhd - usb descriptors and configuration.
         For description of the fields: http://www.beyondlogic.org/usbnutshell/usb1.shtml
 				
-quartus/ - quartus project files. Quartus 11 and 12 were tested with this project
+* quartus/ - quartus project files. Quartus 11 and 12 were tested with this project
    	 - usb.qpf - Quartus project file 
 
-sim/ - ModelSim and Active HDL testbenches and simulation files
+* sim/ - ModelSim and Active HDL testbenches and simulation files
 
 2. SOFTWARE
 ----------
@@ -70,9 +70,9 @@ On the Host PC side, The libusb-win32 (http://www.libusb.org/wiki/libusb-win32) 
 3. MISC
 ----------
 
-support/DE2_NIOS_DEVICE_LED/ -  implementation of whats in vhdl, but in C and on
+ * support/DE2_NIOS_DEVICE_LED/ -  implementation of whats in vhdl, but in C and on
                                 nios II processor - for reference
 								
-support/datasheets/ - Datasheets and programming guides for ISP1362
+ * support/datasheets/ - Datasheets and programming guides for ISP1362
 
 
