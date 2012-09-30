@@ -1,8 +1,16 @@
--=-=-=Project-=-=-=
-Title: ISP1362 VHDL interface for DE2
-Description: A standalone (NIOS II free) interface in VHDL to the ISP1362 USB device for Altera DE2 Development board. 
+ISP1362 VHDL interface for DE2 v1.0
+==============
+Mikhail Zakhaov <m.zakhao@gmail.com>
+September, 2012
 
--=-=-=Table of Contents-=-=-=
+What it is
+----------
+The interface is designed to enable simple, fast, and reliable communication with DE2 board and replace UART interfaces and NIOS II based designs typically used for this task.
+
+Design is written using techniques from Gaisler Method for writing VHDL
+
+Table of Contents
+----------
 
 	1. Hardware
 	2. Software
