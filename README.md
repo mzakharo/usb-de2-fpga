@@ -33,13 +33,13 @@ Design is written using techniques from Gaisler Method  for writing VHDL
 Directory structure:
 
  * src/ - source files for usb interface
-	usb.vhd - top entity
-	drv.vhd - usb driver
-	hal.vhd - low level interface with ISP1362
-	devreq.vhd - handles usb device requests 
-	isp_inc.vhd - ISP1362 register constants and bitfields
-    	usb_inc.vhd - usb descriptors and configuration.
-        For description of the fields: http://www.beyondlogic.org/usbnutshell/usb1.shtml
+	* usb.vhd - top entity
+	* drv.vhd - usb driver
+	* hal.vhd - low level interface with ISP1362
+	* devreq.vhd - handles usb device requests 
+	* isp_inc.vhd - ISP1362 register constants and bitfields
+    	* usb_inc.vhd - usb descriptors and configuration.
+         * For description of the fields: http://www.beyondlogic.org/usbnutshell/usb1.shtml
 				
  * quartus/ - quartus project files. Quartus 11 and 12 were tested with this project
    	 - usb.qpf - Quartus project file 
