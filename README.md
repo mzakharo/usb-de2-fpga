@@ -41,10 +41,10 @@ Directory structure:
     	usb_inc.vhd - usb descriptors and configuration.
         For description of the fields: http://www.beyondlogic.org/usbnutshell/usb1.shtml
 				
-* quartus/ - quartus project files. Quartus 11 and 12 were tested with this project
+ * quartus/ - quartus project files. Quartus 11 and 12 were tested with this project
    	 - usb.qpf - Quartus project file 
 
-* sim/ - ModelSim and Active HDL testbenches and simulation files
+ * sim/ - ModelSim and Active HDL testbenches and simulation files
 
 2. SOFTWARE
 ----------
