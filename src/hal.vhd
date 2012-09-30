@@ -109,6 +109,7 @@ type iface_t is record
 	rdy : bit;
 end record;
 
+
 type state_t is (reset_st,idle_st,write_st, writeA_st, writeB_st, idleA_st,  idleB_st, read_st, readA_st);
 
 type reg_t is record
@@ -233,9 +234,12 @@ begin
 end process;
 --everything in iface does not need to be reset
 --since it is driven by the logic/FSM
-seq_nrst : process
+seq_nrst : process(reset, clk)
 begin
-	wait until rising_edge(clk);	
+	if (reset= '1') then
+	r.iface <= clear_reg;
+	elsif rising_edge(clk) then	
 	r.iface <= rin.iface; 
+	end if;
 end process;
 end architecture;
