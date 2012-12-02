@@ -8,7 +8,7 @@ A standalone (NIOS II free) interface in VHDL to the ISP1362 USB device for Alte
 
 The interface is designed to enable simple, fast, and reliable communication with DE2 board and replace UART interfaces and NIOS II based designs typically used for this task.
 
-Design is written using techniques from [Gaisler Method](www.gaisler.com/doc/vhdl2proc.pdf) for writing VHDL
+Design is written using techniques from [Gaisler Method](http://www.gaisler.com/doc/vhdl2proc.pdf) for writing VHDL
 
 Table of Contents
 ----------
