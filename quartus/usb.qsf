@@ -505,8 +505,7 @@ set_global_assignment -name AUTO_GLOBAL_MEMORY_CONTROLS ON
 set_global_assignment -name ENABLE_DA_RULE "C101, C102, C103, C104, C105, C106, R101, R102, R103, R104, R105, T101, T102, A101, A102, A103, A104, A105, A106, A107, A108, A109, A110, S101, S102, S103, S104, D101, D102, D103, M101, M102, M103, M104, M105"
 set_global_assignment -name ENABLE_DRC_SETTINGS ON
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
-set_global_assignment -name FLOW_DISABLE_ASSEMBLER ON
-set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_global_assignment -name FLOW_DISABLE_ASSEMBLER OFF
 set_global_assignment -name EDA_DESIGN_ENTRY_SYNTHESIS_TOOL "<None>"
 set_global_assignment -name EDA_INPUT_DATA_FORMAT EDIF -section_id eda_design_synthesis
 set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON

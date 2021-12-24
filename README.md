@@ -51,7 +51,7 @@ Directory structure:
 
 The software has been tested under Windows 10 x64 21H2.  
 
-On the Host PC side, Install the libusb-win32 driver through  [Zadig](https://zadig.akeo.ie/)  (Following this [WinUSB WiKi](https://github.com/libusb/libusb/wiki/Windows#How_to_use_libusb_on_Windows))
+On the Host PC side, Install the winusb-1.0 driver through  [Zadig](https://zadig.akeo.ie/)  (Following this [WinUSB WiKi](https://github.com/libusb/libusb/wiki/Windows#How_to_use_libusb_on_Windows))
 
 	
  * support/winusb/  - User application based on libusb-win32 API implementing basic loop-back upload/download

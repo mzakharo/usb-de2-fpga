@@ -11,3 +11,7 @@
 /quartus/*.jdi
 /quartus/usb_assignment_defaults.qdf
 /support/winusb/usb2/Debug
+/support/winusb/usb2/x64
+*.bak
+/quartus/*.smsg
+/quartus/*.qws
