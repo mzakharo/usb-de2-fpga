@@ -41,7 +41,7 @@ Directory structure:
 	* usb_inc.vhd - usb descriptors and configuration.
          * For description of the fields: http://www.beyondlogic.org/usbnutshell/usb1.shtml
 				
- * quartus/ - quartus project files. Quartus 11, 12, 13sp1 were tested with this project
+ * quartus/ - quartus project files. Quartus 13sp1 were tested with this project
    	 * usb.qpf - Quartus project file 
 
  * sim/ - ModelSim and Active HDL testbenches and simulation files
@@ -49,7 +49,7 @@ Directory structure:
 2. SOFTWARE
 ----------
 
-The software has been tested under Windows 7 SP1 x64.  
+The software has been tested under Windows 10 x64 21H2.  
 
 On the Host PC side, Install the libusb-win32 driver through  [Zadig](https://zadig.akeo.ie/)  (Following this [WinUSB WiKi](https://github.com/libusb/libusb/wiki/Windows#How_to_use_libusb_on_Windows))
 
