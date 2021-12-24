@@ -1,0 +1,13 @@
+.vs
+/quartus/db
+/quartus/incremental_db
+/quartus/*.rpt
+/quartus/*.fit.*
+/quartus/*.done
+/quartus/*.pin
+/quartus/*.sof
+/quartus/*.pof
+/quartus/*.summary
+/quartus/*.jdi
+/quartus/usb_assignment_defaults.qdf
+/support/winusb/usb2/Debug
