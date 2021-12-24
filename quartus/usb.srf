@@ -1,7 +1,7 @@
-{ "Warning" "WFLOW_DISABLED_MODULE" "PowerPlay Power Analyzer FLOW_ENABLE_POWER_ANALYZER " "Warning: Skipped module PowerPlay Power Analyzer due to the assignment FLOW_ENABLE_POWER_ANALYZER" {  } {  } 0 0 "Skipped module %1!s! due to the assignment %2!s!" 1 0 "" 0 -1}
-{ "Warning" "WFLOW_DISABLED_MODULE" "PowerPlay Power Analyzer FLOW_ENABLE_POWER_ANALYZER " "Warning: Skipped module * due to the assignment *" {  } {  } 0 0 "Skipped module %1!s! due to the assignment %2!s!" 1 1 "" 0 -1}
-{ "Warning" "WDAT_NO_LOADING_SPECIFIED_ONE_OR_MORE_PINS" "109 " "Warning: Found * output pins without output pin load capacitance assignment" {  } {  } 0 0 "Found %1!d! output pins without output pin load capacitance assignment" 1 1 "" 0 -1}
-{ "Warning" "WMLS_MLS_STUCK_PIN_HDR" "" "Warning: Output pins are stuck at VCC or GND" {  } {  } 0 0 "Output pins are stuck at VCC or GND" 1 0 "" 0 -1}
-{ "Warning" "WCUT_CUT_UNNECESSARY_INPUT_PIN_HDR" "21 " "Warning: Design contains 21 input pin(s) that do not drive logic" {  } {  } 0 0 "Design contains %1!d! input pin(s) that do not drive logic" 1 0 "" 0 -1}
-{ "Warning" "WFITCC_FITCC_IGNORED_ASSIGNMENT" "" "Warning: Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information." {  } {  } 0 0 "Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information." 1 0 "" 0 -1}
-{ "Warning" "WCUT_CUT_UNATTACHED_ASGN" "" "Warning: Ignored locations or region assignments to the following nodes" {  } {  } 0 0 "Ignored locations or region assignments to the following nodes" 1 0 "" 0 -1}
+{ "" "" "" "Warning: Output pins are stuck at VCC or GND" {  } {  } 0 13024 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Warning: Design contains 21 input pin(s) that do not drive logic" {  } {  } 0 21074 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Warning: Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information." {  } {  } 0 171167 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Warning: Ignored locations or region assignments to the following nodes" {  } {  } 0 15705 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Parallel compilation is not licensed and has been disabled" {  } {  } 0 20028 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature." {  } {  } 0 292013 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "*" {  } {  } 0 306006 "" 0 0 "Quartus II" 0 -1 0 ""}
