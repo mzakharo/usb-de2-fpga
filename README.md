@@ -1,6 +1,6 @@
 ISP1362 VHDL interface for DE2 v1.0
 ==============
-Mikhail Zakhaov <m.zakhao@gmail.com>   September, 2012
+Mikhail Zakhaov <m.zakhao@gmail.com>   December, 2021
 
 What it is
 ----------
